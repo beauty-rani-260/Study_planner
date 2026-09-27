@@ -1,3 +1,4 @@
+<HEAD
 # 📚 AI Study Planner Agent
 
 An **agentic AI system** that helps students plan, prioritize, and reorganize their study schedules — built for [Course/Assignment Name].
@@ -34,3 +35,6 @@ This loop (reason → act → observe result → reason again) repeats until the
 - **Streamlit Community Cloud** — deployment
 
 ## 📂 Project Structure
+
+# Study_planner
+03b4497591473f8b26cfc97e92a40ce5353a4c80

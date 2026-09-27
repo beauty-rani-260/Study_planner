@@ -8,8 +8,17 @@ from dotenv import load_dotenv
 
 from tools import calculate_priority, generate_schedule, save_plan, update_plan, load_plan
 
+import streamlit as st
+
 load_dotenv()
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+def get_api_key():
+    try:
+        return st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        return os.getenv("GEMINI_API_KEY")
+
+client = genai.Client(api_key=get_api_key())
 
 MODEL_NAME = "gemini-flash-lite-latest"
 
